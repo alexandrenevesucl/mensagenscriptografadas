@@ -1,0 +1,1 @@
+# Interface com Tkinter ou Flask

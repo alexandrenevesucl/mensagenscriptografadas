@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Painel</title></head>
+<body>
+<h2>Bem-vindo, {{ session['user'] }}</h2>
+<a href="/send">Enviar mensagem</a> | <a href="/logout">Sair</a>
+<h3>Mensagens recebidas:</h3>
+<ul>
+  {% for sender, msg in messages %}
+    <li><strong>{{ sender }}</strong>: {{ msg }}</li>
+  {% endfor %}
+</ul>
+</body>
+</html>
